@@ -3,7 +3,7 @@
 /**
  * main - A program that print diff combo of 3 digit num
  *
- * return: 0
+ * return: always 0
  */
 
 int main(void)
