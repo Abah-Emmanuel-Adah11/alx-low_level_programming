@@ -1,13 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - A program that print all possible diff combo of 2 digit num
+ * main - possiblre combo of 2 digit num with condition
  *
  * Return: 0
  */
 
 int main(void)
-
 {
 	int i;
 	int j;
@@ -27,6 +26,8 @@ int main(void)
 				}
 			}
 		}
+
+
 	}
 	putchar('\n');
 	return (0);
