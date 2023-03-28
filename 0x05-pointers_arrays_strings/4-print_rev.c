@@ -2,21 +2,17 @@
 
 /**
  * print_rev - prints string in reverse order.
- *
  * @s: string to be printed.
- *
- * Return: Always zero
  */
 
 void print_rev(char *s)
 {
-	int len = 0, index;
+	int i;
+	int count = 0;
 
-	while (s[index++])
-		len++;
-
-	for (index = len - 1; index >= 0; index--)
-		_putchar(s[index]);
-
+	for (i = 0; s[i] != '\0'; i++)
+		count++;
+	for (i = count; i >= 0; i--)
+		_putchar(s[i]);
 	_putchar('\n');
 }
