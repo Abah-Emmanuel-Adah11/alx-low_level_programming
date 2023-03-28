@@ -1,21 +1,22 @@
 #include "main.h"
 
 /**
- * print_rev - checks for upper case
+ * print_rev - prints string in reverse order.
  *
- * @s: char to check
+ * @s: string to be printed.
  *
  * Return: Always zero
  */
 
 void print_rev(char *s)
 {
-	int i;
-	int count = 0;
+	int len = 0, index;
 
-	for (i = 0 ; s[i] != '\0' ; i++)
-		count++;
-	for (i = count ; i >= 0 ; i--)
-		_putchar(s[i]);
+	while (s[index++])
+		len++;
+
+	for (index = len - 1; index >= 0; index--)
+		_putchar(s[index]);
+
 	_putchar('\n');
 }
