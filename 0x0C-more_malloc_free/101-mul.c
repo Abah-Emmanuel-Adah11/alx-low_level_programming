@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 #define ERR_MSG "Error"
 
@@ -31,7 +33,7 @@ int is_digit(char *s)
  * Return: the length of the string
  */
 
-int_strlen(char *s)
+int _strlen(char *s)
 {
 	int i = 0;
 
