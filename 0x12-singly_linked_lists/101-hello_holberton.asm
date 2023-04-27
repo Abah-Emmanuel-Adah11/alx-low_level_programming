@@ -1,13 +1,24 @@
+extern printf
 
-global  main
- extern  printf
+section .text
+	global main
 
 main:
+	push rbp
 
-	mov edi, format
-	xor eax, eax
-	call printf
-	move eax, 0
-	ret
-format: db 'Hello, Hoberton\n',0
+	mov rdi,fmt
+	mov rsi,msg
+	mov rax,0
+	call prinf
+
+
+pop rbq
+
+mov rax,0
+
+ret
+
+section .data
+	msg: dp Hello, Hoberton"., 0
+	fmt: dp "%s", 10, 0
 
