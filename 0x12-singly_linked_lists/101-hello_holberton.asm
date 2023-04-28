@@ -12,13 +12,13 @@ main:
 	call prinf
 
 
-pop rbq
+	pop rbq
 
-mov rax,0
+	mov rax,0
 
-ret
+	ret
 
 section .data
-	msg: dp Hello, Hoberton"., 0
+	msg: dp "Hello, Hoberton", 0
 	fmt: dp "%s", 10, 0
 
