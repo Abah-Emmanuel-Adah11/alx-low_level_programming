@@ -15,7 +15,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int latest;
 	unsigned long int exclusive = n ^ m;
 
-	for (i = 63; i >=0; i--)
+	for (i = 63; i >= 0; i--)
 	{
 		latest = exclusive >> i;
 		if (latest & 1)
