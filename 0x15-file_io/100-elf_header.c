@@ -56,7 +56,7 @@ void print_magic(unsigned char *e_ident)
 
 	printf(" Magic: ");
 
-	for (index = 0; index < EI_NIDENT ; index++)
+	for (index = 0; index < EI_NIDENT; index++)
 	{
 		printf("%02x", e_ident[index]);
 
@@ -123,6 +123,7 @@ void print_version(unsigned char *e_ident)
 {
 	printf(" version: %d",
 			e_ident[EI_VERSION]);
+
 	switch (e_ident[EI_VERSION])
 	{
 	case EV_CURRENT:
@@ -242,6 +243,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 
 	if (e_ident[EI_CLASS] == ELFCLASS32)
 		printf("%#x\n", (unsigned int)e_entry);
+
 	else
 		printf("%#lx\n", e_entry);
 }
@@ -297,7 +299,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	{
 		free(header);
 		close_elf(o);
-		dprintf(STDERR_FILENO, "Error: %s : No such file\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: `%s` : No such file\n", argv[1]);
 		exit(98);
 	}
 
