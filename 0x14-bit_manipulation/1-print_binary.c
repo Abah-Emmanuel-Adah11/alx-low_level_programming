@@ -3,6 +3,7 @@
 /**
  * print_binary - A function that prints the binary representation of a
  * number
+ *
  * @n: number to print in binary
  */
 
