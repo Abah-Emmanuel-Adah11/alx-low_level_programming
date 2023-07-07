@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * get_endianness - A function that checks if a machine is little
