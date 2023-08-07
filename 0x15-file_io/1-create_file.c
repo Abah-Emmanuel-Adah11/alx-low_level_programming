@@ -4,6 +4,7 @@
  * create_file - A function that creates a file
  *
  * @filename: A that point's to the file to be created.
+ *
  * @text_content: A pointer to a string to write to the file.
  *
  * Return: If the function fails it will return -1
